@@ -9,4 +9,4 @@ jobs:
       - name: Install Deps
         run: npm ci 
       - name: Test App
-        run: npm run testgit
+        run: npm run test
