@@ -24,9 +24,9 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "holladev-io-astra" # TODO: replace with Deno Deploy project name
-          entrypoint: "server/entry.mjs"
-          root: "dist"
+          project: holladev-io-astra # TODO: replace with Deno Deploy project name
+          entrypoint: server/entry.mjs
+          root: dist
           # entrypoint: "client/main.ts"          
       # - name: Start Deno Server
       #   run: deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs
