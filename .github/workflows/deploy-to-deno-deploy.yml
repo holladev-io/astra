@@ -25,7 +25,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: holladev-io-astra # TODO: replace with Deno Deploy project name
-          entrypoint: dist/server/entry.mjs
+          entrypoint: server/entry.mjs
           root: dist
-      # - name: Start Deno Server
-      #   run: deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs
+      - name: Start Deno Server
+        run: deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs        
