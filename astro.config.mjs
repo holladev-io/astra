@@ -5,7 +5,6 @@ import deno from '@astrojs/deno';
 export default defineConfig({
     output: 'server',
     adapter: deno({
-        port: 8080,
-        hostname: 'holladev-io-astra.deno.dev'
+        port: 8080        
     })
 });
